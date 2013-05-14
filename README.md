@@ -9,6 +9,8 @@ The dumbest authentication gem ever! It works like this ([as specified in the te
 How to install
 ==============
 
+Run `rails generate dumb_auth:install` followed by `rake db:migrate` to create the Identities table
+
 Just add the `dumb_auth` gem to your `Gemfile`, bundle, and you will get access to the `login` (POST) route, `logout` (DELETE) route and `logged_in?` method, accessible both in your controllers and helpers.
 
 Note that DumbAuth requires `ApplicationController` to exist in the app where it is installed.
